@@ -1,36 +1,83 @@
-.tabs {
-	display: flex;
-	flex-wrap: wrap; // make sure it wraps
-	justify-content: center;
-	align-items: space-between;
-	margin-top: 5%;
-}
-.tabs label {
-	order: 1; // Put the labels first
-	display: block;
-	padding: 1rem 2rem;
-	margin-right: 0.2rem;
-	cursor: pointer;
-  background: #00a89c;
-  border-radius: 5px;
-	opacity: 0.5;
-  font-weight: bold;
-  transition: background ease 0.2s;
-}
-.tabs .tab {
-  order: 99; // Put the tabs last
-  flex-grow: 1;
+// .tabs {
+// 	display: flex;
+// 	flex-wrap: wrap; // make sure it wraps
+// 	justify-content: center;
+// 	align-items: space-between;
+// 	margin-top: 5%;
+// }
+// .tabs label {
+// 	order: 1; // Put the labels first
+// 	display: block;
+// 	padding: 1rem 2rem;
+// 	margin-right: 0.2rem;
+// 	cursor: pointer;
+//   background: #00a89c;
+//   border-radius: 5px;
+// 	opacity: 0.5;
+//   font-weight: bold;
+//   transition: background ease 0.2s;
+// }
+// .tabs .tab {
+//   order: 99; // Put the tabs last
+//   flex-grow: 1;
+// 	width: 100%;
+// 	display: none;
+//   padding: 1rem;
+//   background: #fff;
+// }
+// .tabs input[type="radio"] {
+// 	display: none;
+// }
+// .tabs input[type="radio"]:checked + label {
+// 	background: #fff;
+// }
+// .tabs input[type="radio"]:checked + label + .tab {
+// 	display: block;
+// }
+
+
+.container{
 	width: 100%;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+
+.tabs{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	background:#00a89c;
+	border-bottom: 5px #00a89c solid;
+}
+
+.tabs li{
+	display: inline-block;
+	margin:0;
+	padding: 10px 20px 5px 20px;
+	cursor: pointer;
+
+	font-size:1.2em;
+	line-height:2em;
+	color:#FFF;
+}
+
+.tabs li:hover {
+	background:#ff8828;
+}
+
+.tabs li.current{
+	background: #ff8828;
+	color: #FFF;
+}
+
+.tab-content{
 	display: none;
-  padding: 1rem;
-  background: #fff;
+	background: #ededed;
+	padding: 15px;
+
+	line-height:1.4;
 }
-.tabs input[type="radio"] {
-	display: none;
-}
-.tabs input[type="radio"]:checked + label {
-	background: #fff;
-}
-.tabs input[type="radio"]:checked + label + .tab {
-	display: block;
+
+.tab-content.current{
+	display: inherit;
 }
