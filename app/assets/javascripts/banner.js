@@ -6,8 +6,3 @@ $(document).ready(function () {
     })
   }, 5000);
 });});
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
